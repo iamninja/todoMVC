@@ -1,8 +1,10 @@
+// Create todo model
 Todos.Todo = DS.Model.extend({
 	title: DS.attr('string'),
 	isCompleted: DS.attr('boolean')
 });
 
+// Add fixture data
 Todos.Todo.FIXTURES = [
 	{
 		id: 1,
