@@ -16,7 +16,7 @@ Todos.TodosController = Ember.ArrayController.extend({
 	},
 
 	remaining: function() {
-		return this.filterBy('isCompeted', false).get('length');
+		return this.filterBy('isCompleted', false).get('length');
 	}.property('@each.isCompleted'),
 
 	inflection: function() {
